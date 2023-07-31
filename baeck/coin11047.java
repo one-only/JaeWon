@@ -1,4 +1,4 @@
-package back;
+package baeck;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ public class coin11047 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
         int n = Integer.parseInt(st.nextToken());
         int k = Integer.parseInt(st.nextToken());
@@ -25,6 +25,7 @@ public class coin11047 {
                 count += k/coin[i];
                 k %= coin[i];
             }
+            if(k == 0) break;
         }
         System.out.println(count);
     }
