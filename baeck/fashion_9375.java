@@ -34,3 +34,44 @@ public class fashion_9375 {
         System.out.println(sb);
     }
 }
+//-------------------설명---------------------------------------------------------
+//    int testCase = Integer.parseInt(br.readLine()); 테스트 케이스
+//    Map<String, Integer> clothes = new HashMap<>(); 맵 선언
+//    int n = Integer.parseInt(br.readLine());
+//
+//    Map<String, Integer> clothes = new HashMap<>();
+//    clothes 의 맵은 아이템 종류를 키값으로 가짐
+//        뒤에는 Integer 니까 해당 종류(키)의 아이템 수
+//
+//        String tmp = br.readLine(); ===== hat headgear
+//
+//        String[] wear = tmp.split(" "); wear[1] -> headgear : 종류, wear[0] -> 아이템
+//
+//
+//        int value = clothes.get(wear[1]);
+//        clothes.put(wear[1], value + 1); // 이미 존재하면 +1만 해줌 이유 : 입을 수 있는 아이템이 하나 늘어난 것
+//
+//        clothes.put(wear[1], 2); // 존재하지 않으면 2 (경우의 수: 안입을 때, 입을때)
+//
+//        hat headgear
+//        sunglasses eyewear
+//        turban headgear
+//
+//        [hat, null]
+//        [sunglasses, null]
+//        [turban, null]
+//        2 x 2 x 2 인데 여기에서 전부 null 인 경우[null, null, null] 1을 빼줘야 함 그래서 첫번째는 답 5
+//
+//
+//
+//
+//
+//        2                            	testCase
+//        3				n
+//        hat headgear
+//        sunglasses eyewear
+//        turban headgear
+//        3
+//        mask face
+//        sunglasses face            //clothes.put(wear[1], value + 1); // 이미 존재하면 +1만 해줌 이유 : 입을 수 있는 아이템이 하나 늘어난 것
+//        makeup face
